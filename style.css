@@ -1,3 +1,7 @@
+li {
+    list-style: none;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -13,7 +17,6 @@ header h1 {
 
 header ul {
     display: flex;
-    list-style: none;
     margin: 35px 0;
 }
 
@@ -25,5 +28,39 @@ header ul li a {
     color: white;
 }
 
+#Hero .mainimg {
+    max-width: 1440px;
+    max-height: 812px;
+    margin: 0 auto;
+}
+
+#Hero img {
+    width: 100%;
+    height: 65vh;
+}
+
+#News {
+    max-width: 1440px;
+    margin: 80px auto 40px;
+}
+
+#News h2 {
+    text-align: center;
+}
+
+#News .News-content {
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 80px auto;
+}
+
+#News img {
+    width: 158px;
+    height: 100px;
+}
+
+#News h3 {
+    text-align: center;
+}
 
   
