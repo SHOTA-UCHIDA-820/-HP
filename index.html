@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Nostalgia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +15,7 @@
         <h1>Cafe Nostalgia</h1>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="#Home">home</a></li>
                 <li><a href="#News">News</a></li>
                 <li><a href="#Concept">Concept</a></li>
                 <li><a href="#Menu">Menu</a></li>
@@ -22,14 +25,21 @@
         </nav>
     </header>
 
-    <section id="Hero">
-        <div class="mainimg">
-            <img src="image/coffee-shop.jpg" alt="コーヒー">
+    <section id="hero">
+        <div class="image-container">
+            <img src="image/coffee-shop.jpg" alt="カフェの風景">
+            <div class="image-overlay"></div>
+            <div class="text-overlay">
+            <p class="tagline">-懐かしさと優しさが交わる空間で、心を癒すひとときを-</p>
+            <h1 class="title">Cafe Nostalgia</h1>
+            <p class="established">established in 2024</p>
+            </div>
         </div>
     </section>
+    
 
     <section id="News">
-        <h2>News</h2>
+        <h2>NEWS<span class="subtitle">ニュース</span></h2>
         <div class="News-content">
             <ul class="News-list">
                 <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.12 年末年始営業のお知らせ</p></a></li>
@@ -37,13 +47,13 @@
                 <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.10 フォローでドリンク1杯サービス！</p></a></li>
             </div>
         </div>
-            <div class="botann">
+            <div class="btn">
                 <h3>続きを読む</h3>
             </div>
     </section>
 
     <section id="concept">
-        <h2>Concept</h2>
+        <h2>CONCEPT<span class="subtitle">コンセプト</span></h2>
         <div class="concept-text">
             <h3>「心ほどける、とっておきの一杯を。」</h3>
             <p>Café Nostalgiaは、日々の疲れをそっと癒す場所。</p>
@@ -78,8 +88,7 @@
                     ひとくち頬張れば幸せな気分に。
                     シンプルながらも食材の質にこだわり、
                     ひとつひとつ丁寧に仕上げています。
-                    カフェでのひとときにぴったりな、
-                    心も満たす贅沢な一品をぜひご賞味ください。</p>
+                    心を満たす贅沢な一品をぜひご賞味ください。</p>
             </div>
         </div>
         <div class="concept-content">
@@ -91,8 +100,6 @@
                     じっくりと焙煎した豆を丁寧に挽き、
                     ゆっくりと蒸らしながら抽出することで、
                     豊かな香りと味わいを実現。
-                    スイーツやパンとの相性にもこだわり、
-                    バランスの取れたブレンドを追求しました。
                     一杯のコーヒーが生み出す、心ほどけるひとときを
                     お楽しみください。</p>
             </div>
@@ -100,24 +107,70 @@
     </section>
 
     <section id="menu">
-        <h2>Menu</h2>
+        <h2>MENU<span class="subtitle">メニュー</span></h2>
         <p>Cafe Nostalgiaでは、厳選したコーヒーと手作りのスイーツ、心を込めたフードメニューをご提供。
             バリスタが淹れる香り高いコーヒーや、季節限定の特別メニューで特別なひとときを。
             朝食やブランチにもぴったりのプレートもご用意し、いつ訪れても心温まる時間をお届けします。</p>
-        <div class="menu-grid">
-            <div class="menu-item"><img src="image/coffee1.jpg" alt="コーヒー"><span>COFFEE</span></div>
-            <div class="menu-item"><img src="image/tea.jpg" alt="紅茶"><span>TEA</span></div>
-            <div class="menu-item"><img src="image/cake1.jpg" alt="ケーキ"><span>CAKE</span></div>
-            <div class="menu-item"><img src="image/sandwiches.jpg" alt="モーニング"><span>MORNING</span></div>
-            <div class="menu-item"><img src="image/burger.jpg" alt="ランチ"><span>LUNCH</span></div>
-            <div class="menu-item"><img src="image/kebab-meat-sandwich.jpg" alt="イブニング"><span>EVENING</span></div>
-            <div class="menu-item"><img src="image/suites.jpg" alt="季節限定"><span>SEASON</span></div>
-            <div class="menu-item"><img src="image/gift.jpg" alt="ギフト"><span>GIFT</span></div>
-        </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                  <img src="image/coffee1.jpg" alt="コーヒー">
+                  <div class="category-overlay">
+                    <div class="category-name">COFFEE</div>
+                  </div>
+                </div>
+
+                <div class="grid-item">
+                  <img src="image/tea.jpg" alt="紅茶">
+                  <div class="category-overlay">
+                    <div class="category-name">TEA</div>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="image/cake1.jpg" alt="ケーキ">
+                  <div class="category-overlay">
+                    <div class="category-name">CAKE</div>
+                  </div>
+                </div>
+
+                <div class="grid-item">
+                  <img src="image/sandwiches.jpg" alt="朝食">
+                  <div class="category-overlay">
+                    <div class="category-name">MORNING</div>
+                  </div>
+                </div>
+
+                <div class="grid-item">
+                  <img src="image/burger.jpg" alt="ランチ">
+                  <div class="category-overlay">
+                    <div class="category-name">LUNCH</div>
+                  </div>
+                </div>
+                
+                <div class="grid-item">
+                  <img src="image/kebab-meat-sandwich.jpg" alt="夕食">
+                  <div class="category-overlay">
+                    <div class="category-name">EVENING</div>
+                  </div>
+                </div>
+                
+                <div class="grid-item">
+                  <img src="image/pumpkin-soup.jpg" alt="季節のデザート">
+                  <div class="category-overlay">
+                    <div class="category-name">SEASON</div>
+                  </div>
+                </div>
+                
+                <div class="grid-item">
+                  <img src="image/gift.jpg" alt="ギフト">
+                  <div class="category-overlay">
+                    <div class="category-name">GIFT</div>
+                  </div>
+                </div>
+              </div>
     </section>
 
     <section id="stories">
-        <h2>Stories</h2>
+        <h2>STORIES<span class="subtitle">ストーリーズ</span></h2>
         <div class="stories-text">
             <p>Cafe Nostalgiaは、忙しい日常の中で心安らぐひとときを届けるために生まれました。
                 こだわりのコーヒーと手作りスイーツ、心温まる空間で、訪れるたびにほっとできる時間をお届けします。
@@ -171,14 +224,8 @@
     </section>
 
     <section id="access">
-        <h2>Access</h2>
+        <h2>ACCESS<span class="subtitle">アクセス</span></h2>
         <div class="access-content">
-            <ul>
-                <li><strong>住所:</strong> 〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル 1F</li>
-                <li><strong>電話番号:</strong> 03-1234-5678</li>
-                <li><strong>営業時間:</strong> 平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
-                <li><strong>席数:</strong> 総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
-            </ul>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946134263!2d139.76448111278785!3d35.68113977247279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1740638521418!5m2!1sja!2sjp" 
                 width="600" 
                 height="450" 
@@ -187,6 +234,12 @@
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <ul>
+                <li><strong>住所:</strong> 〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル 1F</li>
+                <li><strong>電話番号:</strong> 03-1234-5678</li>
+                <li><strong>営業時間:</strong> 平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
+                <li><strong>席数:</strong> 総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
+            </ul>
         </div>
     </section>
 
