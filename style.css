@@ -46,7 +46,7 @@ header ul {
 
 header ul li {
     width: fit-content;
-    margin: 0 1px;
+    margin: 0 18px;
     padding-top: 7px;
 }
 
@@ -215,12 +215,12 @@ header ul li a {
     padding: 60px 20px;
     max-width: 1440px;
     background-color: #f7f6f6;
+    color: #542;
     margin: 0 auto;
   }
 
 #concept h2 {
     font-size: 32px;
-    color: #542;
     font-family: serif;
     position: relative;
     text-align: center;
@@ -292,6 +292,7 @@ header ul li a {
     padding: 60px 20px;
     max-width: 1440px;
     background-color: #f7f6f6;
+    color: #542;
     margin: 0 auto;
 }
 
@@ -305,7 +306,6 @@ header ul li a {
 
 #menu h2 {
     font-size: 32px;
-    color: #542;
     font-family: serif;
     position: relative;
     text-align: center;
@@ -349,6 +349,7 @@ header ul li a {
     position: relative;
     overflow: hidden;
     aspect-ratio: 1/1;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
   
 .grid-item img {
@@ -356,6 +357,12 @@ header ul li a {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+.grid-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
   }
   
 .category-overlay {
@@ -397,6 +404,7 @@ header ul li a {
     padding: 60px 20px;
     max-width: 1440px;
     background-color: #f7f6f6;
+    color: #542;
     margin: 0 auto;
   }
 
@@ -476,14 +484,16 @@ header ul li a {
   }
 
 .story-title {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: serif;
     margin-bottom: 10px;
   }
 
 .story-date {
     color: #777;
     font-size: 12px;
+    text-align: end;
   }
 
 .slider::-webkit-scrollbar {
@@ -495,12 +505,13 @@ header ul li a {
     padding: 60px 20px;
     max-width: 1440px;
     background-color: #f7f6f6;
+    color:#542;
+    font-family: serif;
     margin: 0 auto;
   }
   
 #access h2 {
     font-size: 32px;
-    color: #542;
     font-family: serif;
     position: relative;
     text-align: center;
@@ -535,6 +546,9 @@ header ul li a {
     display: flex;
     justify-self: center;
     margin-top: 80px;
+    font-family: serif;
+    font-weight: bolder;
+    color:#542;
   }
   
 #access ul {
@@ -542,35 +556,67 @@ header ul li a {
     padding: 0;
     margin-bottom: 40px;
     margin-left: 100px;
-    margin-top: 120px;
+    margin-top: 100px;
+    font-family: serif;
   }
   
 #access ul li {
-    font-size: 16px;
-    color: #333333;
-    margin-bottom: 20px;
+    font-size: 18px;
+    color: #542;
+    margin-bottom: 40px;
     text-align: left;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
+    stroke: #6b4f34; 
   }
   
 footer {
     background-color: #3F2D01;
-    padding: 40px 20px;
+    padding-top: 10px;
     text-align: center;
     color: #ffffff;
     margin-top: 40px;
+    height: 370px;
+    position: relative;
   }
+
+footer h1 {
+    font-family: 'Emblema One', cursive;
+    font-size: 48px;
+    letter-spacing: 1px;
+}
   
 footer p {
     margin: 0;
     font-size: 14px;
   }
+
+.footer-end {
+    height: 90px;
+    width: 100%;
+    background-color: #2D2C2A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-end p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
   
 .social-links {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
   }
   
 .social-links a {
@@ -581,18 +627,25 @@ footer p {
 .social-links img {
     width: 30px;
     height: 30px;
+    margin-top: 10px;
     transition: transform 0.3s ease;
   }
   
 .social-links img:hover {
     transform: scale(1.2);
   }
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
-nav {
-    margin-top: 20px;
-  }
-  
-nav a {
+footer .nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #ffffff;
@@ -601,9 +654,7 @@ nav a {
     letter-spacing: 1px;
   }
   
-nav a:hover {
+footer .nav a:hover {
     text-decoration: underline;
     color: #ffffff;
   }
-  
- 
