@@ -1,7 +1,6 @@
 body {
-    background-color:  #f7f6f6;;
+    background-color:  #eeeded;
     margin: 0 auto;
-    width: fit-content;
     box-sizing: border-box;
 }
 
@@ -121,7 +120,7 @@ header ul li a {
     text-align: center;
     padding: 60px 20px;
     max-width: 1440px;
-    background-color: #f7f6f6;
+    background-color: #eeeded;
     margin: 0 auto;
   }
 
@@ -214,7 +213,6 @@ header ul li a {
     text-align: center;
     padding: 60px 20px;
     max-width: 1440px;
-    background-color: #f7f6f6;
     color: #542;
     margin: 0 auto;
   }
@@ -252,23 +250,45 @@ header ul li a {
   }
 
 #concept img {
-    width: 363px;
-    height: 310px;
+    width: 360px;
+    height: 380px;
+    filter: brightness(105%);
+    object-fit: cover;
+}
+
+#concept .image-frame {
+    position: relative;
+    display: inline-block;
+    padding: 16px;
+    background-color: white;
+    transform: rotate(-2deg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #concept .concept-text  {
     text-align: center;
 }
 
+#concept .concept-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 #concept .concept-content {
     display: flex;
     max-width: 860px;
-    margin: 100px auto;
+    margin: 80px auto;
+}
+
+#concept .concept-content:nth-child(2) {
+    flex-direction: row-reverse;
 }
 
 #concept .concept-content1, #concept .concept-content2, #concept .concept-content3 {
     padding: 30px 50px;
     background-color: #ffffff;
+    height: fit-content;
+    margin: auto 0;
 }
 
 #concept h3 {
@@ -291,7 +311,6 @@ header ul li a {
     text-align: center;
     padding: 60px 20px;
     max-width: 1440px;
-    background-color: #f7f6f6;
     color: #542;
     margin: 0 auto;
 }
@@ -403,7 +422,6 @@ header ul li a {
     text-align: center;
     padding: 60px 20px;
     max-width: 1440px;
-    background-color: #f7f6f6;
     color: #542;
     margin: 0 auto;
   }
@@ -504,7 +522,6 @@ header ul li a {
     text-align: center;
     padding: 60px 20px;
     max-width: 1440px;
-    background-color: #f7f6f6;
     color:#542;
     font-family: serif;
     margin: 0 auto;
