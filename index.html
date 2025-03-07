@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Nostalgia</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,10 +44,10 @@
         <h2>NEWS<span class="subtitle">ニュース</span></h2>
         <div class="News-content">
             <ul class="News-list">
-                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.12 年末年始営業のお知らせ</p></a></li>
-                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.11 冬の新作ドリンク登場！</p></a></li>
-                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.10 フォローでドリンク1杯サービス！</p></a></li>
-            </div>
+                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.12 <span>年末年始営業のお知らせ</span></p></a></li>
+                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.11 <span>冬の新作ドリンク登場！</span></p></a></li>
+                <li><a href="#"><img src="image/coffee3.jpg" alt="コーヒー"><p>2024.10 <span>フォローでドリンク1杯サービス！</span></p></a></li>
+            </ul>
         </div>
             <div class="btn">
                 <h3>続きを読む</h3>
@@ -116,9 +118,9 @@
 
     <section id="menu">
         <h2>MENU<span class="subtitle">メニュー</span></h2>
-        <p>Cafe Nostalgiaでは、厳選したコーヒーと手作りのスイーツ、心を込めたフードメニューをご提供。
-            バリスタが淹れる香り高いコーヒーや、季節限定の特別メニューで特別なひとときを。
-            朝食やブランチにもぴったりのプレートもご用意し、いつ訪れても心温まる時間をお届けします。</p>
+        <p>Cafe Nostalgiaでは、厳選したコーヒーと手作りのスイーツ、心を込めたフードメニューをご提供。</p>
+        <p>バリスタが淹れる香り高いコーヒーや、季節限定の特別メニューで特別なひとときを。</p>
+        <p>朝食やブランチにもぴったりのプレートもご用意し、いつ訪れても心温まる時間をお届けします。</p>
             <div class="grid-container">
                 <div class="grid-item">
                   <img src="image/coffee1.jpg" alt="コーヒー">
@@ -179,56 +181,93 @@
 
     <section id="stories">
         <h2>STORIES<span class="subtitle">ストーリーズ</span></h2>
-        <div class="stories-text">
-            <p>Cafe Nostalgiaは、忙しい日常の中で心安らぐひとときを届けるために生まれました。
-                こだわりのコーヒーと手作りスイーツ、心温まる空間で、訪れるたびにほっとできる時間をお届けします。
-                コーヒーの産地や焙煎のこだわり、店内を彩る小物の物語など、ここにはたくさんの想いが詰まっています。
-                一杯のコーヒーとともに、Cafe Nostalgiaの世界をお楽しみください。</p>
-        </div>
-        <div class="slider" id="slider">
-            <div class="story-card">
-              <img src="image/barista.jpg" alt="Story 1">
-              <div class="story-content">
-                <div class="story-title">Cafe Nostalgiaのはじまり</div>
-                <div class="story-date">2025.01.11</div>
-              </div>
+        <stories-wrapper>
+            <div class="stories-text">
+                <p>Cafe Nostalgiaは、忙しい日常の中で心安らぐひとときを届けるために生まれました。
+                    こだわりのコーヒーと手作りスイーツ、心温まる空間で、訪れるたびにほっとできる時間をお届けします。
+                    コーヒーの産地や焙煎のこだわり、店内を彩る小物の物語など、ここにはたくさんの想いが詰まっています。
+                    一杯のコーヒーとともに、Cafe Nostalgiaの世界をお楽しみください。</p>
             </div>
-            <div class="story-card">
-              <img src="image/cappuccino.jpg" alt="Story 2">
-              <div class="story-content">
-                <div class="story-title">隠れた人気メニューの裏話</div>
-                <div class="story-date">2024.12.21</div>
-              </div>
+            <div class="slider" id="slider">
+                <div class="story-card">
+                <img src="image/barista.jpg" alt="Story 1">
+                <div class="story-content">
+                    <div class="story-title">Cafe Nostalgiaのはじまり</div>
+                    <div class="story-date">2025.01.11</div>
+                </div>
+                </div>
+                <div class="story-card">
+                <img src="image/cappuccino.jpg" alt="Story 2">
+                <div class="story-content">
+                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-date">2024.12.21</div>
+                </div>
+                </div>
+                <div class="story-card">
+                <img src="image/thank-you.jpg" alt="Story 3">
+                <div class="story-content">
+                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-date">2025.11.30</div>
+                </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/cake2.jpg" alt="Story 1">
+                    <div class="story-content">
+                    <div class="story-title">Cafe Nostalgiaのはじまり</div>
+                    <div class="story-date">2025.01.11</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/field.jpg" alt="Story 2">
+                    <div class="story-content">
+                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-date">2024.12.21</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/coffee2.jpg" alt="Story 3">
+                    <div class="story-content">
+                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-date">2025.11.30</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/cake2.jpg" alt="Story 1">
+                    <div class="story-content">
+                    <div class="story-title">Cafe Nostalgiaのはじまり</div>
+                    <div class="story-date">2025.01.11</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/field.jpg" alt="Story 2">
+                    <div class="story-content">
+                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-date">2024.12.21</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/coffee2.jpg" alt="Story 3">
+                    <div class="story-content">
+                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-date">2025.11.30</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/field.jpg" alt="Story 2">
+                    <div class="story-content">
+                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-date">2024.12.21</div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="image/coffee2.jpg" alt="Story 3">
+                    <div class="story-content">
+                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-date">2025.11.30</div>
+                    </div>
+                </div>
             </div>
-            <div class="story-card">
-              <img src="image/thank-you.jpg" alt="Story 3">
-              <div class="story-content">
-                <div class="story-title">お客様に伝えたい10のこと</div>
-                <div class="story-date">2025.11.30</div>
-              </div>
-            </div>
-            <div class="story-card">
-                <img src="image/cake2.jpg" alt="Story 1">
-                <div class="story-content">
-                  <div class="story-title">Cafe Nostalgiaのはじまり</div>
-                  <div class="story-date">2025.01.11</div>
-                </div>
-              </div>
-              <div class="story-card">
-                <img src="image/field.jpg" alt="Story 2">
-                <div class="story-content">
-                  <div class="story-title">隠れた人気メニューの裏話</div>
-                  <div class="story-date">2024.12.21</div>
-                </div>
-              </div>
-              <div class="story-card">
-                <img src="image/coffee2.jpg" alt="Story 3">
-                <div class="story-content">
-                  <div class="story-title">お客様に伝えたい10のこと</div>
-                  <div class="story-date">2025.11.30</div>
-                </div>
-              </div>
-          </div>
+        </stories-wrapper>
     </section>
 
     <section id="access">
@@ -243,10 +282,10 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
             <ul>
-                <li><strong>住所:</strong> 〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル 1F</li>
-                <li><strong>電話番号:</strong> 03-1234-5678</li>
-                <li><strong>営業時間:</strong> 平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
-                <li><strong>席数:</strong> 総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
+                <li><strong>住所：</strong>〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル1F</li>
+                <li><strong>電話番号：</strong>03-1234-5678</li>
+                <li><strong>営業時間：</strong>平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
+                <li><strong>席数：</strong>総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
             </ul>
         </div>
     </section>
@@ -268,5 +307,44 @@
         </div>
         <div class="footer-end"><p>&copy; 2024 Cafe Nostalgia</p></div>
     </footer>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(function(){
+                $('.slider').slick({
+                    dots: true,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                    ]
+                    });
+                });
+        </script>
+</body>
 </html>
+
