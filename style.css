@@ -1,8 +1,7 @@
 body {
     background-color:  #eeeded;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
-    width: fit-content;
 }
 
 li {
@@ -57,6 +56,10 @@ header ul li a {
     font-weight: bold;
 }
 
+main {
+   margin: 0 auto;
+}
+
 #hero h1 {
     font-family: 'Emblema One', cursive;
     letter-spacing: 4px;
@@ -74,6 +77,7 @@ header ul li a {
     width: 100%;
     height: auto;
     display: block;
+    filter: brightness(130%);
   }
   
   .image-overlay {
@@ -120,7 +124,7 @@ header ul li a {
 
   #News {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0;
     max-width: 1440px;
     background-color: #eeeded;
     margin: 0 auto;
@@ -168,6 +172,7 @@ header ul li a {
     width: 158px;
     height: 100px;
     margin-right: 60px;
+    border-radius: 12px;
 }
 
 #News .News-list {
@@ -179,6 +184,17 @@ header ul li a {
     margin: 40px auto;
     height: 100px;
     border-bottom: #3F2D01 1px solid;
+    position: relative;
+}
+
+#News li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 151px;
+  height: 1px;
+  background-color: #eeeded;
 }
 
 #News li a {
@@ -200,7 +216,6 @@ header ul li a {
 
 #News li span {
     margin-left: 20px;
-    letter-spacing: px;
 }
 
 #News h3 {
@@ -224,7 +239,7 @@ header ul li a {
 
 #concept {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -327,7 +342,7 @@ header ul li a {
     text-align: center;
 }
 
-#concept p {
+.concept-txet p {
     font-family: serif;
     margin: 0;
     padding: 5px 18px;
@@ -337,7 +352,7 @@ header ul li a {
 
 #menu {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -345,9 +360,9 @@ header ul li a {
 
 #menu p {
    text-align: center;
-   max-width: 1100px;
+   max-width: 81%;
    margin: 30px auto;
-   line-height: 1rem;
+   line-height: 3.5rem;
    font-size: 18px;
    letter-spacing: 1.5px;
    width: fit-content;
@@ -464,7 +479,7 @@ header ul li a {
 
   #stories {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -535,8 +550,7 @@ header ul li a {
   }
 
 .story-card {
-    max-width: 200px;
-    width: min-content;
+    width: 200px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -578,9 +592,9 @@ header ul li a {
 
 #access {
     text-align: center;
-    padding: 60px 20px;
-    max-width: 1440px;
+    padding: 60px 0;
     color:#542;
+    max-width: 1440px;
     font-family: serif;
     margin: 0 auto;
   }
@@ -652,6 +666,7 @@ footer {
     text-align: center;
     color: #ffffff;
     margin-top: 40px;
+    width: 100%;
     height: 370px;
     position: relative;
   }
@@ -756,3 +771,582 @@ footer .nav a:hover {
     text-align: center;
 }
  
+@media (max-width: 1024px) {
+
+  header {
+    max-width: 1024px;
+    width: 100%;
+    height: 70px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header ul {
+    height: fit-content;
+    padding-left: 100px;
+    margin: 0;
+  }
+
+  header ul li {
+    padding-top: 3px;
+  }
+
+  header ul li a {
+    font-size: 12px;
+  }
+
+  nav {
+    height: fit-content;
+  }
+
+  .text-overlay p {
+    font-size: 14px;
+  }
+
+  #hero h1 {
+    font-size: 48px;
+  }
+
+  #News h2 {
+    font-size: 26px;
+  }
+
+  #News h2 .subtitle {
+    font-size: 14px;
+  }
+
+  #concept h2 {
+    font-size: 26px;
+  }
+
+  #concept h2::before, #concept h2::after {
+    width: 37%;
+  }
+
+  #concept h2 .subtitle {
+    font-size: 14px;
+  }
+
+  #concept h3 {
+    font-size: 38px;
+    margin: 50px auto;
+  }
+
+  #concept .concept-text p {
+    font-size: 16px;
+    margin: 24px 0;
+  }
+
+  #concept .concept-content {
+    display: flex;
+    max-width: 700px;
+    margin: 50px auto;
+  }
+
+  .concept-wrapper {
+    margin-top: 50px;
+  }
+
+  #concept img {
+    width: 300px;
+    height: 280px;
+  }
+
+  #concept .concept-content1, #concept .concept-content2, #concept .concept-content3 {
+    padding: 20px 30px;
+    background-color: #ffffff;
+    height: fit-content;
+    margin: auto 0;
+  }
+
+  #concept h4 {
+    font-size: 18px;
+    padding: 8px 0;
+    width: 280px;
+    margin: 10px auto 0;
+  }
+
+  .concept-wrapper p {
+    font-size: 13px;
+    padding: 13px 25px 6px;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  #concept .image-frame {
+    padding: 10px 10px 4px;
+  }
+
+  #menu h2 {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+
+  #menu h2 .subtitle {
+    font-size: 14px;
+  }
+
+  #menu p {
+    width: 70%;
+    line-height: 3rem;
+    font-size: 14px;
+    margin: 24px auto;
+  }
+
+  .grid-container {
+    max-width: 860px;
+  }
+
+  .category-overlay {
+    margin: 6px;
+  }
+
+  #stories h2 {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+
+  #stories h2 .subtitle {
+    font-size: 14px;
+  }
+
+  #stories h2::before, #stories h2::after {
+    width: 38%;
+  }
+
+  #stories .stories-text p {
+    font-size: 16px;
+  }
+
+  #access h2 {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+
+  #access h2 .subtitle {
+    font-size: 14px;
+  }
+
+  .iframe-container {
+    width: 350px;
+    height: 350px;
+    margin-left: 20px;
+  }
+
+  #access ul {
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+
+  #access ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-name {
+      font-size: 40px;
+  }
+
+  header {
+    max-width: 768px;
+    width: 100%;
+    height: 60px;
+  }
+
+  header ul {
+    padding-left: 50px;
+  }
+
+  header ul li  {
+    margin: 0 15px;
+    padding-top: 1px;
+  }
+
+  header ul li a {
+    font-size: 11px;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #News {
+    padding: 40px 0;
+  }
+
+  #News h2 {
+    font-size: 22px;
+  }
+
+  #News h2::before, #News h2::after {
+    width: 37%;
+  }
+
+  #News li {
+    height: 70px;
+  }
+
+  #News img {
+    width: 100px;
+    height: 70px;
+    margin-right: 30px;
+  }
+
+  #News li::before {
+    width: 94px;
+  }
+
+  #News li a {
+    height: 70px;
+  }
+
+  #News li p {
+    width: 400px;
+    height: 70px;
+    font-size: 15px;
+  }
+
+  #News .News-content {
+    margin: 60px auto 80px;
+  }
+
+  #News .btn {
+    padding: 1px 50px;
+  }
+
+  #News h3 {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  #concept h2 {
+    font-size: 22px;
+  }
+
+  #concept h2::before, #concept h2::after {
+    width: 34%;
+  }
+
+  #concept {
+    padding: 40px 0;
+  }
+
+  #concept h3 {
+    font-size: 30px;
+    margin: 50px auto;
+  }
+
+  #concept .concept-text p {
+    font-size: 14px;
+    margin: 24px 0;
+  }
+
+  #concept .concept-content {
+    max-width: 590px;
+    width: fit-content;
+    margin: 40px auto;
+  }
+
+  #concept img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #concept .concept-content1, #concept .concept-content2, #concept .concept-content3 {
+    padding: 10px;
+    background-color: #ffffff;
+    height: fit-content;
+    margin: auto 0;
+    width: 55%;
+  }
+
+  #concept h4 {
+    font-size: 14px;
+    padding: 6px 0;
+    width: 260px;
+    margin: 10px auto 0;
+  }
+
+  .concept-wrapper p {
+    font-size: 12px;
+    padding: 13px 25px 6px;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  #concept .image-frame {
+    padding: 7px;
+    width: 240px;
+    height: 220px;
+  }
+
+  #menu {
+    padding: 40px 0;
+  }
+
+  #menu h2 {
+    font-size: 22px;
+    margin: 40px 0;
+  }
+
+  #menu h2::before, #menu h2::after {
+    width: 37%;
+  }
+
+  #menu p {
+    width: 75%;
+    line-height: 3rem;
+    font-size: 14px;
+    margin: 24px auto;
+  }
+
+  .grid-container {
+    max-width: 75%;
+    margin-top: 40px;
+  }
+
+  .category-overlay {
+    border: 3px solid white;
+  }
+
+  .category-name {
+    font-size: 32px;
+  }
+
+  #stories {
+    padding: 40px 0;
+  }
+
+  #stories h2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  #stories h2::before, #stories h2::after {
+    width: 35%;
+  }
+
+  #stories .stories-text p {
+    font-size: 14px;
+    line-height: 3.5rem;
+    width: 82%;
+  }
+
+  .slider {
+    margin-top: 30px;
+    max-width: 82%;
+  }
+
+  #access {
+    padding: 40px 0 1px;
+  }
+
+  #access h2 {
+    font-size: 22px;
+    margin: 40px 0;
+  }
+
+  #access h2::before, #access h2::after {
+    width: 36%;
+  }
+
+  #access .access-content {
+    display: contents;
+  }
+
+  .iframe-container {
+    margin: 30px auto 20px;
+    width: 600px;
+    height: 400px;
+  }
+
+  #access ul {
+    margin: 60px 0 0;
+  }
+
+  #access ul li {
+    justify-self: center;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .category-name {
+      font-size: 24px;
+  }
+
+  header {
+    max-width: 425px;
+    width: 100%;
+    height: 60px;
+  }
+
+  header ul {
+    padding: 0;
+  }
+
+  header ul li {
+    margin: 0;
+  }
+
+  .image-container {
+    height: 100vh;
+  }
+
+  .image-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text-overlay p {
+    font-size: 12px;
+  }
+
+  #hero h1 {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  #News li  {
+    width: fit-content;
+  }
+
+  #News img {
+    width: 50px;
+    height: 35px;
+  }
+
+  #concept .image-frame {
+    padding: 7px;
+    width: 35%;
+    height: 150px;
+  }
+
+  .iframe-container {
+    margin: 30px auto 20px;
+    width: 380px;
+    height: 350px;
+  }
+
+  #News h2 {
+    font-size: 14px;
+  }
+
+  #News h2::before, #News h2::after {
+    width: 30%;
+  }
+
+  #News h2 .subtitle {
+    font-size: 9px;
+    margin-top: -5px;
+  }
+
+  #News .News-content {
+    margin: 0 auto;
+  }
+
+  #News li {
+    height: 45px;
+    margin: 40px auto;
+  }
+
+  #News img {
+    width: 60px;
+    height: 45px;
+    margin-right: 20px;
+  }
+
+  #News li::before {
+    width: 52px;
+  }
+
+  #News li a {
+    height: 45px;
+  }
+
+  #News li p {
+    width: 210px;
+    height: 45px;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+  }
+
+  #News li span {
+    margin-left:10px;
+  }
+
+  #News .btn {
+    padding: 1px 28px;
+  }
+
+  #News h3 {
+    font-size: 10px;
+    margin: 8px 0;
+  }
+
+  #concept h2 {
+    font-size: 14px;
+  }
+
+  #concept h2 .subtitle {
+    font-size: 9px;
+    margin-top: -5px;
+  }
+
+  #concept h2::before, #concept h2::after {
+    width: 28%;
+  }
+
+  #concept h3 {
+    font-size: 18px;
+  }
+
+  #concept .concept-wrapper {
+    margin-top: 40px;
+  }
+
+  #concept .concept-text p {
+    font-size: 10px;
+    margin: 24px auto;
+    width: 64%;
+    line-height: 2rem;
+    
+  }
+
+  #concept .concept-content {
+    display: contents;
+  }
+
+  #concept .image-frame {
+    transform: none;
+    margin: 0 auto;
+    padding: 4px;
+    width: 60%;
+    height: 250px;
+  }
+
+  #concept .concept-content1, #concept .concept-content2, #concept .concept-content3 {
+    width: 60%;
+    margin: 0 auto 60px;
+    padding: 4px;
+  }
+
+  #concept h4 {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .concept-wrapper p {
+    font-size: 8px;
+    padding: 13px 25px 6px;
+  }
+}
