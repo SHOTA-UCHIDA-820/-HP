@@ -15,9 +15,16 @@
 <body>
     <header>
         <h1>Cafe Nostalgia</h1>
+
+        <div id="drawer_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#News">NEWS</a></li>
                 <li><a href="#concept">CONCEPT</a></li>
                 <li><a href="#menu">MENU</a></li>
@@ -214,56 +221,56 @@
                 <div class="story-card">
                     <img src="image/cake2.jpg" alt="Story 1">
                     <div class="story-content">
-                    <div class="story-title">Cafe Nostalgiaのはじまり</div>
+                    <div class="story-title">季節限定スイーツのひみつ</div>
                     <div class="story-date">2025.01.11</div>
                     </div>
                 </div>
                 <div class="story-card">
                     <img src="image/field.jpg" alt="Story 2">
                     <div class="story-content">
-                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-title">ここでしか味わえない理由</div>
                     <div class="story-date">2024.12.21</div>
                     </div>
                 </div>
                 <div class="story-card">
                     <img src="image/coffee2.jpg" alt="Story 3">
                     <div class="story-content">
-                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-title">焙煎士が語る香りの真実</div>
                     <div class="story-date">2025.11.30</div>
                     </div>
                 </div>
                 <div class="story-card">
-                    <img src="image/cake2.jpg" alt="Story 1">
+                    <img src="image/barista.jpg" alt="Story 1">
                     <div class="story-content">
                     <div class="story-title">Cafe Nostalgiaのはじまり</div>
                     <div class="story-date">2025.01.11</div>
                     </div>
                 </div>
                 <div class="story-card">
-                    <img src="image/field.jpg" alt="Story 2">
+                    <img src="image/cappuccino.jpg" alt="Story 2">
                     <div class="story-content">
                     <div class="story-title">隠れた人気メニューの裏話</div>
                     <div class="story-date">2024.12.21</div>
                     </div>
                 </div>
                 <div class="story-card">
-                    <img src="image/coffee2.jpg" alt="Story 3">
+                    <img src="image/thank-you.jpg" alt="Story 3">
                     <div class="story-content">
                     <div class="story-title">お客様に伝えたい10のこと</div>
                     <div class="story-date">2025.11.30</div>
                     </div>
                 </div>
                 <div class="story-card">
-                    <img src="image/field.jpg" alt="Story 2">
+                    <img src="image/cake2.jpg" alt="Story 2">
                     <div class="story-content">
-                    <div class="story-title">隠れた人気メニューの裏話</div>
+                    <div class="story-title">季節限定スイーツのひみつ</div>
                     <div class="story-date">2024.12.21</div>
                     </div>
                 </div>
                 <div class="story-card">
-                    <img src="image/coffee2.jpg" alt="Story 3">
+                    <img src="image/field.jpg" alt="Story 3">
                     <div class="story-content">
-                    <div class="story-title">お客様に伝えたい10のこと</div>
+                    <div class="story-title">ここでしか味わえない理由</div>
                     <div class="story-date">2025.11.30</div>
                     </div>
                 </div>
@@ -273,24 +280,26 @@
 
     <section id="access">
         <h2>ACCESS<span class="subtitle">アクセス</span></h2>
-        <div class="access-content">
-            <div class="iframe-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946134263!2d139.76448111278785!3d35.68113977247279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1740638521418!5m2!1sja!2sjp" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <div class="access-wrapper">
+            <div class="access-content">
+                <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946134263!2d139.76448111278785!3d35.68113977247279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1740638521418!5m2!1sja!2sjp" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
-        </div>
-            <ul>
-                <li><strong>住所：</strong>〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル1F</li>
-                <li><strong>電話番号：</strong>03-1234-5678</li>
-                <li><strong>営業時間：</strong>平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
-                <li><strong>席数：</strong>総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
-            </ul>
+                <ul>
+                    <li><strong>住所：</strong>〒150-0001 東京都渋谷区〇〇丁目-2-3 Nostalgiaビル1F</li>
+                    <li><strong>電話番号：</strong>03-1234-5678</li>
+                    <li><strong>営業時間：</strong>平日 8:00〜22:00 / 土日祝 9:00〜23:00</li>
+                    <li><strong>席数：</strong>総席数：45席（禁煙席：35席 / 喫煙席：10席）</li>
+                </ul>
+            </div>
         </div>
     </section>
     </main>
@@ -317,7 +326,6 @@
         <script>
             $(function(){
                 $('.slider').slick({
-                    dots: true,
                     infinite: false,
                     speed: 300,
                     slidesToShow: 6,
@@ -338,7 +346,7 @@
                         }
                         },
                         {
-                        breakpoint: 425,
+                        breakpoint: 500,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1
@@ -347,6 +355,13 @@
                     ]
                     });
                 });
+    
+            $(function(){
+                $("#drawer_toggle").click(function(){
+                    $(this).toggleClass("open");
+                    $("nav").slideToggle();
+                });
+            });
         </script>
 </body>
 </html>
