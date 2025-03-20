@@ -22,7 +22,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #2D2C2A;
-    height: 70px;
+    height: 85px;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -110,6 +110,10 @@ header ul li a {
     font-weight: bold;
 }
 
+header ul li a:hover {
+  color: rgb(194, 194, 194);
+}
+
 main {
    margin: 0 auto;
 }
@@ -121,7 +125,7 @@ main {
 #hero h1 {
     font-family: 'Emblema One', cursive;
     letter-spacing: 4px;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .image-container {
@@ -165,7 +169,7 @@ main {
   }
   
 .tagline {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 1rem;
   }
   
@@ -176,14 +180,14 @@ main {
   }
   
 .established {
-    font-size: 18px;
+    font-size: 22px;
     font-style: italic;
     letter-spacing: 1px;
   }
 
 #News {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
     max-width: 1440px;
     background-color: #eeeded;
     margin: 0 auto;
@@ -203,7 +207,7 @@ main {
     position: absolute;
     top: 50%;
     width: 39%;
-    border-top: 2px solid #542;
+    border-top: 3px solid #542;
   }
 
 #News h2::before {
@@ -244,6 +248,7 @@ main {
     height: 100px;
     border-bottom: #3F2D01 1px solid;
     position: relative;
+    transition: transform 0.3s ease;
 }
 
 #News li::before {
@@ -262,6 +267,10 @@ main {
     width: fit-content;
     height: 100px;
     color: #3F2D01;
+}
+
+#News li:hover {
+  transform: scale(1.04);
 }
 
 #News li p {
@@ -298,7 +307,7 @@ main {
 
 #concept {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -317,7 +326,7 @@ main {
     position: absolute;
     top: 50%;
     width: 39%;
-    border-top: 2px solid #542;
+    border-top: 3px solid #542;
   }
 
 #concept h2::before {
@@ -387,6 +396,10 @@ main {
     margin: auto 0;
 }
 
+#concept .concept-content1 p, #concept .concept-content2 p, #concept .concept-content3 p{
+  text-align: left;
+}
+
 #concept h3 {
     font-size: 48px;
     font-weight: lighter;
@@ -413,7 +426,7 @@ main {
 
 #menu {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -444,7 +457,7 @@ main {
     position: absolute;
     top: 50%;
     width: 39%;
-    border-top: 2px solid #542;
+    border-top: 3px solid #542;
   }
 
 #menu h2::before {
@@ -520,7 +533,7 @@ main {
 
 #stories {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
     max-width: 1440px;
     color: #542;
     margin: 0 auto;
@@ -545,7 +558,7 @@ main {
     position: absolute;
     top: 50%;
     width: 39%;
-    border-top: 2px solid #542;
+    border-top: 3px solid #542;
   }
 
 #stories h2::before {
@@ -634,7 +647,7 @@ main {
 
 #access {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
     color:#542;
     max-width: 1440px;
     font-family: serif;
@@ -654,7 +667,7 @@ main {
     position: absolute;
     top: 50%;
     width: 39%;
-    border-top: 2px solid #542;
+    border-top: 3px solid #542;
   }
   
 #access h2::before {
@@ -699,7 +712,7 @@ main {
 #access ul li {
     font-size: 18px;
     color: #542;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -1375,6 +1388,7 @@ footer .nav a:hover {
 
   #News h2::before, #News h2::after {
     width: 30%;
+    border-top: 2px solid #542;
   }
 
   #News h2 .subtitle {
@@ -1440,6 +1454,7 @@ footer .nav a:hover {
 
   #concept h2::before, #concept h2::after {
     width: 28%;
+    border-top: 2px solid #542;
   }
 
   #concept h3 {
@@ -1501,6 +1516,7 @@ footer .nav a:hover {
 
   #menu h2::before, #menu h2::after {
     width: 30%;
+    border-top: 2px solid #542;
   }
 
   #menu p {
@@ -1538,6 +1554,7 @@ footer .nav a:hover {
 
   #stories h2::before, #stories h2::after {
     width: 29%;
+    border-top: 2px solid #542;
   }
 
   #stories .stories-text p {
@@ -1563,6 +1580,7 @@ footer .nav a:hover {
 
   #access h2::before, #access h2::after {
     width: 29%;
+    border-top: 2px solid #542;
   }
 
   .iframe-container {
