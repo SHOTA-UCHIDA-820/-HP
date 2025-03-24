@@ -1056,17 +1056,17 @@ footer .nav a:hover {
   }
   
   header nav ul {
-    position: absolute;
-    top: 20%;
-    left: 0;
+    margin: auto 0;
     padding: 0;
+    position: absolute;
+    top: 12%;
+    left: 0;
     display: block;
     background-color: #fff;
   }
 
   header nav ul li {
     display: inline-block;
-    height: 35px;
     border-radius: 2px;
     width: 100%;
     margin: 0 auto;
@@ -1078,13 +1078,12 @@ footer .nav a:hover {
 
   header nav ul li a {
     display: block;
-    padding: 10px 15px;
     color: #5a5a31;
     font-size: unset;
     text-decoration: none;
     transition: color .3s;
     text-align: center;
-    margin: 70px 0;
+    margin: 30px 0;
   }
 
   header nav ul li a:hover {
@@ -1346,6 +1345,11 @@ footer .nav a:hover {
   header ul li {
     margin: 0;
   }
+
+  header nav ul li {
+    font-size: 24px;
+  }
+
 
   #drawer_toggle {
     top: 0;
