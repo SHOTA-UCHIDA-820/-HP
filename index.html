@@ -362,6 +362,11 @@
                     $(this).toggleClass("open");
                     $("nav").slideToggle();
                 });
+
+                $("nav a").click(function () {
+                    $("#drawer_toggle").removeClass("open");
+                    $("nav").slideUp(1);
+                });
             });
         </script>
 </body>
