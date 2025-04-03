@@ -1615,7 +1615,7 @@ footer .nav a:hover {
 
   #access ul li {
     font-size: 9px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     text-align: center;
   }
 
