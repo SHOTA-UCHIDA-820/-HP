@@ -1576,6 +1576,14 @@ footer .nav a:hover {
     margin: 0 auto;
   }
 
+  .story-title {
+    font-size: 14px;
+  }
+
+  .story-date {
+    font-size: 10px;
+  }
+
   #access {
     padding: 40px 0;
   }
