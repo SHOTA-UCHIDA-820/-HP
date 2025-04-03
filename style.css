@@ -1126,7 +1126,7 @@ footer .nav a:hover {
   }
 
   #News {
-    padding: 40px 0 0;
+    padding: 10px 0;
   }
 
   #News h2 {
@@ -1185,7 +1185,7 @@ footer .nav a:hover {
   }
 
   #concept {
-    padding: 40px 0 0;
+    padding:  10px 0;
   }
 
   #concept h3 {
@@ -1239,7 +1239,7 @@ footer .nav a:hover {
   }
 
   #menu {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   #menu h2 {
@@ -1273,7 +1273,7 @@ footer .nav a:hover {
   }
 
   #stories {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   #stories h2 {
@@ -1297,7 +1297,7 @@ footer .nav a:hover {
   }
 
   #access {
-    padding: 40px 0 1px;
+    padding: 10px 0;
   }
 
   #access h2 {
@@ -1390,6 +1390,7 @@ footer .nav a:hover {
 
   #News h2 {
     font-size: 14px;
+    margin: 20px 0 40px;
   }
 
   #News h2::before, #News h2::after {
@@ -1446,7 +1447,7 @@ footer .nav a:hover {
   }
 
   #concept {
-    padding: 40px 0 0;
+    padding: 0;
   }
 
   #concept h2 {
@@ -1514,7 +1515,7 @@ footer .nav a:hover {
   }
 
   #menu {
-    padding: 40px 0;
+    padding: 0;
   }
 
   #menu h2 {
@@ -1551,7 +1552,7 @@ footer .nav a:hover {
   }
 
   #stories {
-    padding: 40px 0 0;
+    padding: 0;
   }
 
   #stories h2 {
@@ -1585,7 +1586,7 @@ footer .nav a:hover {
   }
 
   #access {
-    padding: 40px 0;
+    padding: 0;
   }
 
   #access h2 {
@@ -1611,7 +1612,7 @@ footer .nav a:hover {
   #access ul {
     margin: 50px auto 0;
     width: fit-content;
-}
+  }
 
   #access ul li {
     font-size: 9px;

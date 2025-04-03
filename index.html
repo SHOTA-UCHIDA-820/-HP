@@ -359,15 +359,21 @@
     
             $(function(){
                 $("#drawer_toggle").click(function(){
-                    $(this).toggleClass("open");
-                    $("nav").slideToggle();
-                });
-
-                $("nav a").click(function () {
-                    $("#drawer_toggle").removeClass("open");
-                    $("nav").slideUp(1);
-                });
+                $(this).toggleClass("open");
+                $("nav").slideToggle();
             });
+
+            $("nav a").click(function (e) {
+                e.preventDefault();
+                var target = $(this).attr("href"); 
+                var position = (target === "#") ? 0 : $(target).offset().top - 60;
+
+                $("#drawer_toggle").removeClass("open");
+                $("nav").slideUp(200);
+                $("html, body").animate({scrollTop: position}, 600, "swing");
+            });
+        });
+
         </script>
 </body>
 </html>
