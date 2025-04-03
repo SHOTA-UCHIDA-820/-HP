@@ -1452,6 +1452,7 @@ footer .nav a:hover {
 
   #concept h2 {
     font-size: 14px;
+    margin: 20px 0;
   }
 
   #concept h2 .subtitle {
@@ -1520,6 +1521,7 @@ footer .nav a:hover {
 
   #menu h2 {
     font-size: 14px;
+    margin: 20px 0;
   }
 
   #menu h2 .subtitle {
@@ -1557,7 +1559,7 @@ footer .nav a:hover {
 
   #stories h2 {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
   #stories h2 .subtitle {
@@ -1591,6 +1593,7 @@ footer .nav a:hover {
 
   #access h2 {
     font-size: 14px;
+    margin: 20px 0;
   }
 
   #access h2 .subtitle {
